@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>f8fa75cc-05ee-4929-9fe1-a54e131c2986</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Practice26.py</StartupFile>
+    <StartupFile>Practice27.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -26,6 +26,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Practice26.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Practice27.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

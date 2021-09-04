@@ -90,7 +90,7 @@ def romanToIntOptimal(s: str):
     value = 0
     for i in range(len(s)):
         if(i != 0 and symbolDict[s[i]] > symbolDict[s[i-1]]):
-            value = value + symbolDict[s[i]] - 2 * eachPlaceValue[i-1]
+            value = value + symbolDict[s[i]] - 2 * symbolDict[i-1]
         else:
             value = value + symbolDict[s[i]]
     return value
