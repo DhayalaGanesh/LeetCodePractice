@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>f8fa75cc-05ee-4929-9fe1-a54e131c2986</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Practice27.py</StartupFile>
+    <StartupFile>Practice122.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +21,16 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Practice121.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Practice122.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Practice13.py" />
+    <Compile Include="Practice1984.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Practice20.py">
       <SubType>Code</SubType>
     </Compile>
