@@ -61,3 +61,26 @@ def maxProfit(prices: List[int]) -> int:
     return maximumProfitInList(prices, 1, prices[0], prices[0])
 print(maxProfit([1,2,3,4,5]))
 print(maxProfit([7,6,4,3,1]))
+print(maxProfit([1, 7, 2, 3, 6, 7, 6, 7]))
+
+def maxProfitOptimal(prices: List[int]) -> int:
+    def maximumOfTwo(a: int, b: int):
+        if(a>b): return a
+        return b
+    def maximumProfitOptimal(prices: List[int]):
+        minPrice = prices[0]
+        profit = 0
+        for i in range(1,len(prices)):
+            if(minPrice>prices[i]):
+                minPrice = prices[i]
+            else:
+                profit = profit + (prices[i]-minPrice)
+                minPrice = prices[i]
+        return profit
+        
+    if(len(prices) == 0 or len(prices) == 1): return 0
+    return maximumProfitOptimal(prices)
+
+print(maxProfitOptimal([1,2,3,4,5]))
+print(maxProfitOptimal([7,6,4,3,1]))
+print(maxProfitOptimal([1, 7, 2, 3, 6, 7, 6, 7]))
